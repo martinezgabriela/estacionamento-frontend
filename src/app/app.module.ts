@@ -21,6 +21,11 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { CrudComponent } from './views/client/crud/crud.component';
 import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ClientReadComponent } from './components/client/client-read/client-read.component';
+import { ClientRead2Component } from './components/client/client-read2/client-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -32,7 +37,9 @@ import { ClientCreateComponent } from './components/client/client-create/client-
     FooterComponent,
     HomeComponent,
     CrudComponent,
-    ClientCreateComponent
+    ClientCreateComponent,
+    ClientReadComponent,
+    ClientRead2Component
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,10 @@ import { ClientCreateComponent } from './components/client/client-create/client-
     HttpClientModule,
     MatInputModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
